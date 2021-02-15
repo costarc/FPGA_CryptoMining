@@ -1,0 +1,8 @@
+*.[oa]
+*.db_info
+*.pyc
+__pycache__
+src/verilog/odo_gen
+src/pool/fakepool
+src/projects/*/build_files/*
+src/projects/*/output_files/*
