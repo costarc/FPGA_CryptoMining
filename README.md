@@ -27,17 +27,20 @@ export QUARTUSPATH="/cygdrive/c/intelFPGA_lite/18.1/quartus/bin64"
 
 Open one cygwin window, and run:
 
-~/github/FPGA_CryptoMining/src/autocompile.sh de10_nano
+cd ./src
+./autocompile.sh de10_nano
 
 
 Open another cygwin window, and run:
 (edit and add user pool username, or Digibyte Address before running)
 
-~/github/FPGA_CryptoMining/src/pool/stratum/mine.sh
+cd ./src/pool/stratum
+./mine.sh
 
 
 Open another cygwin window and run:
-~/github/FPGA_CryptoMining/src/miner/$QUARTUSPATH/quartus_stp.exe -t mine.tcl
+cd ./src/miner
+$QUARTUSPATH/quartus_stp.exe -t mine.tcl
 
 
 # Mining pool used for this build: https://odo.dgb256.online/
